@@ -165,7 +165,7 @@
             }
             
             function GetAllDataOnce() {
-              const dbref = query(ref(db, "user/"), orderByChild("bestscore"), limitToLast(250));
+              const dbref = query(ref(db, "user/"), orderByChild("bestscore"), limitToLast(300));
               
               get(dbref).then((snapshot) => {
                 var names = [];
